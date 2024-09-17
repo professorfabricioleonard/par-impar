@@ -1,6 +1,5 @@
 package br.com.developeracademy;
 
-import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
@@ -20,6 +19,6 @@ public class ParImparResource {
         else
             mensagem = "O número informado é impar";
 
-        return Response.status(500).entity(mensagem).build();
+        return Response.ok().entity(mensagem).build();
     }
 }
